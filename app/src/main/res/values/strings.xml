@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TikTakToe</string>
+    <string name="turn_title">Turn: %s-player</string>
+    <string name="xTurnTitle">Turn: X-player</string>
+    <string name="oTurnTitle">Turn: O-player</string>
+    <string name="xWon">X player won</string>
+    <string name="oWon">O player won</string>
+    <string name="draw">This game is draw</string>
+    <string name="zero">0</string>
+    <string name="draw_title">Draw</string>
+    <string name="o_wins_title">O-wins</string>
+    <string name="x_wins_title">X-wins</string>
+</resources>

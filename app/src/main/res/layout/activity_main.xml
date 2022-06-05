@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/turnTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/double_margin"
+        android:fontFamily="@font/blaka"
+        android:gravity="center_horizontal"
+        android:text="@string/xTurnTitle"
+        android:textColor="#422121"
+        android:textSize="@dimen/text_big_title_size"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/vertical_margin"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turnTv">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/firstBtn"
+                style="@style/ButtonStyle"
+                android:onClick="onClickBtn" />
+
+            <Button
+                android:id="@+id/secondBtn"
+                style="@style/ButtonStyle"
+                android:onClick="onClickBtn" />
+
+            <Button
+                android:id="@+id/thirdBtn"
+                style="@style/ButtonStyle"
+                android:onClick="onClickBtn" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/forthBtn"
+                style="@style/ButtonStyle"
+                android:onClick="onClickBtn" />
+
+            <Button
+                android:id="@+id/fifthBtn"
+                style="@style/ButtonStyle"
+                android:onClick="onClickBtn" />
+
+            <Button
+                android:id="@+id/sixBtn"
+                style="@style/ButtonStyle"
+                android:onClick="onClickBtn" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/sevenBtn"
+                style="@style/ButtonStyle"
+                android:onClick="onClickBtn" />
+
+            <Button
+                android:id="@+id/eightBtn"
+                style="@style/ButtonStyle"
+                android:onClick="onClickBtn" />
+
+            <Button
+                android:id="@+id/nineBtn"
+                style="@style/ButtonStyle"
+                android:onClick="onClickBtn" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
+        app:layout_constraintTop_toBottomOf="@+id/tableView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blaka"
+                android:gravity="center_horizontal"
+                android:text="@string/x_wins_title"
+                android:textSize="@dimen/text_title_size"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blaka"
+                android:gravity="center_horizontal"
+                android:text="@string/o_wins_title"
+                android:textSize="@dimen/text_title_size"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blaka"
+                android:gravity="center_horizontal"
+                android:text="@string/draw_title"
+                android:textSize="@dimen/text_title_size"
+                android:textStyle="italic" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/xWinsCountTv"
+                style="@style/WonTitleStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/oWinsCountTv"
+                style="@style/WonTitleStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/drawCountTv"
+                style="@style/WonTitleStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zero" />
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
